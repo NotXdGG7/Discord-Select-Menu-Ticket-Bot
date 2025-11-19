@@ -31,7 +31,7 @@ async def richpresence():
     guild = bot.get_guild(GUILD_ID)
     category1 = discord.utils.get(guild.categories, id=int(CATEGORY_ID1))
     category2 = discord.utils.get(guild.categories, id=int(CATEGORY_ID2)) #You need to add/change things if you have more or less than 2 Categories
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f'Tickets | {len(category1.channels) + len(category2.channels)}'))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f'CrashNet'))
 
 bot.add_cog(Ticket_System(bot))
 bot.add_cog(Ticket_Command(bot))
